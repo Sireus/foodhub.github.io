@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import '_vars.scss';
+@import "../../node_modules/normalize.css/normalize.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background: $main-color;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+#wrapper {
+    max-width: 1407px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 700;
+    color: #FFFFFE;
+    padding: 0;
+}
+
+.subtitle {
+    font-size: 20px;
+    line-height: 32px;
+    color: #A7A9BE;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 22px 44px;
+    outline: none;
+    border: 0;
+    border-radius: 50px;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &-grey {
+        color: $active-color;
+        background: $grey;
+        box-shadow: 0px 15px 50px rgba(171, 172, 175, 0.1);
+    }
+
+    &_yellow {
+        background: $active-color;
+        box-shadow: 0px 15px 50px rgba(215, 153, 0, 0.15);
+    }
+
+    &_black {
+        color: #fff;
+        background: $main-color;
+        box-shadow: 0px 15px 50px rgba(171, 172, 175, 0.1);
+    }
+
+    &:hover {
+        box-shadow: none;
+    }
+}

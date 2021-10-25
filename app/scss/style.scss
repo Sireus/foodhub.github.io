@@ -1,12 +1,408 @@
-body {
-    background: red;
+@import '_global.scss';
+@import '_vars.scss';
+
+/* Main styles */
+
+.header {
+    margin-top: 68px;
+    margin-bottom: 70px;
+
+    &_block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &_left {
+        display: flex;
+        align-items: center;
+    }
+
+    &-nav {
+        margin-left: 148px;
+
+        &_item {
+            color: $text-color;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+    
+        &_item:not(:last-child) {
+            margin-right: 60px;
+        }
+    
+        &_item:hover {
+            color: $active-color;
+        }
+    }
+    
+    &_login {
+        display: flex;
+        align-items: center;
+        &_item {
+            margin-right: 20px;
+            color: $text-color;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+    
+        &_item:hover {
+            color: $active-color;
+        }
+    
+        &_market {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25px;
+            height: 25px;
+            position: relative;
+            cursor: pointer;
+            background: $active-color;
+            border-radius: 2.89855px;
+    
+            .counter {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: -3px;
+                right: -4px;
+                width: 8px;
+                height: 8px;
+                font-weight: 500;
+                font-size: 3.65217px;
+                line-height: 2px;
+                color: $main-color;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+.logo {
+    max-height: 38px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    cursor: pointer;
+
+    color: #fff;
+
+    &_hub {
+        color: $active-color;
+        font-weight: 700;
+    }
 }
 
-.testing {
-    width: 100%;
+.bg-item {
+    position: absolute;
+    z-index: -9999;
+
+    &_right {
+        top: 0;
+        right: 0;
+    }
+
+    &_left_bottom {
+        max-width: 322px;
+        bottom: -45px;
+        left: 0;
+    }
 }
 
-.container {
-    width: 200px;
-    font-style: 13px;
+.welcome {
+    position: relative;
+    margin-bottom: 160px;
+
+    &_columns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &_title {
+        max-width: 632px;
+        font-size: 90px;
+        line-height: 104px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    &_small-title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 15px;
+        color: $orange;
+        margin-bottom: 30px;
+    }
+
+    &_subtitle {
+        max-width: 566px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+.category {
+    margin-bottom: 160px;
+
+    &_items {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &_item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 378px;
+        width: 100%;
+        height: 216px;
+        cursor: pointer;
+        background: $grey;
+        border-radius: 30px;
+
+        &_image {
+            position: absolute;
+            top: -55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 148px;
+            height: 148px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        &_title {
+            margin-top: 80px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 46px;
+            color: #FFFFFE;
+        }
+    }
+
+    &_item:not(:last-child) {
+        margin-right: 87px;
+    }
+}
+
+.about-us {
+    position: relative;
+    margin-bottom: 160px;
+
+    &_columns {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &_title {
+        max-width: 692px;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 68px;
+        color: #FFFFFE;
+        margin-bottom: 30px;
+    }
+
+    &_subtitle {
+        max-width: 692px;
+        margin-bottom: 50px;
+    }
+
+    .bg-item_right {
+        top: 70px;
+    }
+}
+
+.food {
+    position: relative;
+    margin-bottom: 160px;
+
+    &_title {
+        max-width: 543px;
+        font-weight: bold;
+        font-size: 58px;
+        line-height: 68px;
+        color: #FFFFFE;
+        margin-bottom: 162px;
+    }
+
+    &_blocks {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 90px;
+    }
+
+    &_block {
+        position: relative;
+        max-width: 415px;
+        width: 100%;
+        max-height: 315px;
+        height: 100%;
+        text-align: center;
+        padding: 30px 30px 54px;
+        border-radius: 30px;
+        background-color: $grey;
+        transition: all 0.3s ease-in-out;
+
+        &_active {
+            background-color: $text-color;
+
+            .food_block_items_text,
+            .subtitle {
+                color: #46474A;
+            }
+
+            .title {
+                color: $main-color;
+            }
+        }
+
+        &_header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-bottom: 51px;
+        }
+
+        &_image {
+            position: absolute;
+            top: -165px;
+            left: -125px;
+            filter: drop-shadow(0px 8px 80px rgba(37, 39, 46, 0.25));
+        }
+
+        &_items {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+
+            &_text {
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFE;
+            }
+        }
+
+        &_stars {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 12.5px;
+        }
+
+        &_title {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 20px;
+            margin-bottom: 30px;
+        }
+
+        &_subtitle {
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFFFE;
+        }
+    }
+
+    &_block_star {
+        display: block;
+        width: 16.5px;
+        height: 16.5px;
+        background-image: url(../images/star.svg);
+        background-repeat: no-repeat;
+    }
+
+    &_counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_count {
+        display: block;
+        width: 20px;
+        height: 20px;
+        cursor: progress;
+        background-color: $grey;
+        border-radius: 50%;
+
+        &_active {
+            background-color: $active-color;
+        }
+    }
+
+    &_count:not(:last-child) {
+        margin-right: 21px;
+    }
+
+    .bg-item_left_bottom {
+        bottom: -178px;
+    }
+    
+}
+
+.discount {
+    position: relative;
+    margin-bottom: 160px;
+    &_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 110px 145px;
+        background-color: $active-color;
+        text-align: center;
+    }
+
+    &_title {
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 20px;
+        color: $main-color;
+        margin-bottom: 60px;
+        z-index: 3;
+
+        &_active {
+            color: #fff;
+        }
+    }
+    
+    &_subtitle {
+        max-width: 957px;
+        color: $main-color;
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 50px;
+        z-index: 3;
+    }
+
+    .btn_black {
+        margin-right: 30px;
+    }
+
+    &_bg {
+        position: absolute;
+
+        &_top {
+            top: -115px;
+            right: 237px;
+            z-index: 2;
+        }
+
+        &_bottom {
+            bottom: 0;
+            left: 147px;
+            z-index: 2;
+        }
+    }
 }
