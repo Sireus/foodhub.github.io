@@ -51,6 +51,20 @@ img {
     border-radius: 50px;
     transition: box-shadow 0.3s ease-in-out;
 
+    &-cash {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 43px;
+        height: 47px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 9px;
+        background-color: #46474A;
+        border-radius: 4.70588px;
+    }
+
     &-grey {
         color: $active-color;
         background: $grey;
@@ -70,5 +84,19 @@ img {
 
     &:hover {
         box-shadow: none;
+    }
+}
+
+.logo {
+    max-height: 38px;
+    font-weight: 400;
+    font-size: 30px;
+    cursor: pointer;
+
+    color: #fff;
+
+    &_hub {
+        color: $active-color;
+        font-weight: 700;
     }
 }
