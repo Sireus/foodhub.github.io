@@ -321,6 +321,10 @@
         align-items: center;
     }
 
+    .popular_block:not(:last-child) {
+        margin-right: 0;
+    }
+
     .download_title {
         font-size: 28px;
         max-width: 100%;
