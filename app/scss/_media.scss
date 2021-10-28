@@ -1,0 +1,364 @@
+@media (max-width: 1720px) {
+    .welcome_title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .welcome_column:last-child {
+        width: 40%;
+    }
+    .about-us {
+        .bg-item_right {
+            top: 290px;
+        }
+    }
+
+    .download_bg {
+        right: 0;
+    }
+
+    .discount_bg_bottom {
+        left: 0;
+    }
+}
+
+@media (max-width: 1650px) {
+    .bg-item {
+        display: none;
+    }
+}
+
+@media (max-width: 1500px) {
+    .food {
+        &_blocks {
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        &_block {
+            &_image {
+                top: -165px;
+                left: -90px;
+            }
+        }
+
+        &_block:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 1460px) {
+    #wrapper {
+        padding: 0 25px;
+    }
+
+    .food_counter {
+        display: none;
+    }
+
+    .popular {
+        margin-bottom: 0;
+        &_blocks {
+            justify-content: flex-start;
+            margin-bottom: 0;
+        }
+
+        &_block {
+            margin-bottom: 200px;
+        }
+        &_block:hover {
+            margin-top: 0;
+        }
+        &_block__active {
+            margin-top: 0;
+            border-bottom: 0;
+
+            .popular_price {
+                top: -40px
+            }
+        }
+
+        &_block:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}
+
+@media (max-width: 1380px) {
+    .popular_blocks {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .food_block:not(:last-child) {
+        margin-right: 20px;
+        margin-bottom: 150px;
+    }
+
+    
+}
+
+@media (max-width: 1360px) {
+    .about-us_column:first-child {
+        width: 40%;
+    }
+    .category {
+        margin-bottom: 0;
+    }
+
+    .category_items {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .category_item {
+        margin-bottom: 110px;
+        flex: 2;
+
+        &_title {
+            font-size: 25px;
+        }
+    }
+
+    .category_item:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    .about-us_columns {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .food {
+        margin-bottom: 0;
+
+        &_block {
+            margin-bottom: 120px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .header {
+        margin-top: 35px;
+    }
+    .header_block {
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    .category_items {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .header_left {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .header-nav {
+        margin-left: 0;
+
+        &_item {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        &_item:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    .discount_title {
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    .discount_block {
+        padding: 60px 77px;
+    }
+
+    .footer {
+        &_cols {
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        &_col {
+            margin-bottom: 50px;
+        }
+
+        &_col:not(:last-child) {
+            margin-right: 55px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .food_block {
+        width: auto;
+    }
+    .food_block:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 855px) {
+
+    .about-us_title {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    .category_items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .category_item {
+        width: 100%;
+        flex: none;
+
+        &_title {
+            font-size: 25px;
+        }
+    }
+
+    .category_item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .popular_block {
+        height: auto;
+    }
+    .popular_image {
+        width: 215px;
+        height: 217px;
+    }
+}
+
+@media (max-width: 750px) {
+ 
+    .header_login {
+        position: absolute;
+        top: 35px;
+        right: 25px;
+    }
+
+    .discount_title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .discount_subtitle {
+        font-size: 16px;
+    }
+
+    .discount_block {
+        padding: 42px;
+    }
+
+    .popular_title {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+
+    .popular_nav {
+        margin-bottom: 190px;
+    }
+
+    .popular_item {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .popular_item:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    .download_block {
+        flex-direction: column-reverse;
+        padding-top: 20px;
+    }
+
+    .download_title {
+        font-size: 31px;
+        line-height: 41px;
+    }
+
+    .download_image {
+        margin-bottom: 50px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+
+    .discount .btn_black {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .welcome_columns {
+        flex-direction: column-reverse;
+    }
+
+    .welcome_column img {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .food_block {
+        width: 100%;
+
+    }
+
+    .header_left {
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+    }
+    .header-nav {
+        width: 100%;
+        margin-left: 0;
+        white-space: nowrap;
+        height: 45px;
+        overflow-x: auto;
+    }
+
+    .popular {
+        &_block {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            max-width: 100%;
+            min-width: auto;
+            width: auto;
+        }
+
+        &_name {
+            align-items: flex-start;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            &_title {
+                max-width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+
+        &_time {
+          margin-right: 35px;  
+        } 
+    }
+}
