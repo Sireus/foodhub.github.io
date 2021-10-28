@@ -1598,6 +1598,19 @@ img {
   .welcome_column img {
     margin-bottom: 50px;
   }
+
+  .download_col-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .download_title {
+    font-size: 28px;
+    max-width: 100%;
+  }
 }
 @media (max-width: 450px) {
   .food_block {
